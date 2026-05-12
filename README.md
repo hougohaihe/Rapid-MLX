@@ -51,7 +51,7 @@ model = RapidMLX("mlx-community/Mistral-7B-Instruct-v0.2-4bit")
 # Generate text
 response = model.generate(
     prompt="Explain the unified memory architecture of Apple Silicon.",
-    max_tokens=256,
+    max_tokens=512,   # increased from 256 — 256 often cuts off responses mid-thought
     temperature=0.7,
 )
 print(response)
@@ -97,19 +97,3 @@ Rapid-MLX/
 ## Contributing
 
 Contributions are welcome! Please read our contributing guidelines and check the [open issues](https://github.com/your-username/Rapid-MLX/issues).
-
-See [`.all-contributorsrc`](.all-contributorsrc) for a list of contributors.
-
-## Reporting Issues
-
-- **Bug reports**: Use the [bug report template](.github/ISSUE_TEMPLATE/bug_report.yml)
-- **Benchmark reports**: Use the [benchmark report template](.github/ISSUE_TEMPLATE/benchmark_report.yml)
-
-## License
-
-MIT License — see [LICENSE](LICENSE) for details.
-
-## Acknowledgements
-
-- Original project by [raullenchai](https://github.com/raullenchai/Rapid-MLX)
-- Built on [MLX](https://github.com/ml-explore/mlx) by Apple
