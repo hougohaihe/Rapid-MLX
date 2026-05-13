@@ -46,6 +46,7 @@ pip install -e .
 from rapid_mlx import RapidMLX
 
 # Load a model
+# Note: I've been using Phi-3-mini locally — much faster on 16GB M2 than Mistral-7B
 model = RapidMLX("mlx-community/Mistral-7B-Instruct-v0.2-4bit")
 
 # Generate text
@@ -96,4 +97,4 @@ Rapid-MLX/
 
 ## Contributing
 
-Contributions are welcome! Please read our contributing guidelines and check the [open issues](https://github.com/your-username/Rapid-MLX/issues).
+Contributions are welcome! Please read our contributing guidelines and check the [open issues](ht
